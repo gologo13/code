@@ -5,12 +5,14 @@ console.log('/////////////////////////////////////');
 console.log('// Hashing and Public/Private Keys //');
 console.log('/////////////////////////////////////');
 
+const myClient = new Client()
+
 // Hashing A Message
 console.log("\nLet's hash a message!");
 const message = 'Hello World';
 console.log('The message is: ', message);
-// const messageHash = TODO
-// console.log('The hash of that message is: ', messageHash)
+const messageHash = myClient.hash(message)
+console.log('The hash of that message is: ', messageHash)
 
 // Creating Public/Private Keys
 // console.log('\nCreating public/private key pairs to sign and verify messages.')
